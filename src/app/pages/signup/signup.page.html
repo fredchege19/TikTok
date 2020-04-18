@@ -1,0 +1,39 @@
+<ion-header >
+  <ion-toolbar color="danger">
+    <ion-title>SIGN UP</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-logo2></app-logo2>
+<form>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Name</ion-label>
+      <ion-input type='text'></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Phone</ion-label>
+      <ion-input type='text'></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Email</ion-label>
+      <ion-input type='text'></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">No Plate</ion-label>
+      <ion-input type='text'></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input type='text'></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      Already have an account? <a routerLink='/login'> Sign In</a>
+   </ion-item>
+
+    <ion-button expand="block" shape="round" color="danger" >Submit</ion-button>
+  </ion-list>
+</form>
+</ion-content>

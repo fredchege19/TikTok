@@ -1,0 +1,29 @@
+<ion-header >
+  <ion-toolbar color="danger">
+    <ion-title>LOGIN</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <app-logo2></app-logo2>
+<form>
+  <ion-list>
+    <ion-item>
+      <ion-label position="stacked">Username</ion-label>
+      <ion-input type='text' name="username" [(ngModel)]="postData.username"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="stacked">Password</ion-label>
+      <ion-input type='password' name="password" [(ngModel)]="postData.password"></ion-input>
+    </ion-item>
+
+    <ion-item lines='none'>
+      <div class="center">
+        <a routerLink='/signup'>Create an account</a>
+      </div>
+   </ion-item>
+
+    <ion-button expand="block" shape="round" color="danger" (click)="loginAction()">Submit</ion-button>
+  </ion-list>
+</form>
+</ion-content>
